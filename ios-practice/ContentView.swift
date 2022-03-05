@@ -9,8 +9,18 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, World!").padding()
+        VStack(alignment: .leading) {
+            Text("Hello, World!")
+                .font(.title)
+            .foregroundColor(Color.orange)
+            HStack {
+                Text("sub title").font(.subheadline).foregroundColor(Color.secondary)
+                Spacer()
+                Text("d.kanai").font(.subheadline).foregroundColor(Color.secondary)
+            }
+        }.padding()
     }
 //    @Environment(\.managedObjectContext) private var viewContext
 //
