@@ -12,14 +12,16 @@ struct ContentView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Hello, World!")
-                .font(.title)
-            .foregroundColor(Color.orange)
+            MapView().frame(height: 300)
+            Text("Hello, World!").font(.title).foregroundColor(Color.orange)
             HStack {
                 Text("sub title").font(.subheadline).foregroundColor(Color.secondary)
                 Spacer()
                 Text("d.kanai").font(.subheadline).foregroundColor(Color.secondary)
             }
+            Divider()
+            Text("About").font(.title2)
+            Text("Description here")
         }.padding()
     }
 //    @Environment(\.managedObjectContext) private var viewContext
