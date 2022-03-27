@@ -95,11 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				1ABD712527D360E700B88D55 /* ContentView.swift */,
-				1A361EEA27F0A5F8000624BF /* CircleImage.swift */,
-				1ABD715227D36CF500B88D55 /* MapView.swift */,
-				1A361EF527F0ABF5000624BF /* LandmarkRow.swift */,
-				1A361EF727F0AD39000624BF /* LandmarkList.swift */,
-				1A361EF927F116C2000624BF /* LandmarkDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +114,18 @@
 				1A361EF327F0AB7A000624BF /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A361EFB27F11E82000624BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1A361EF527F0ABF5000624BF /* LandmarkRow.swift */,
+				1A361EF727F0AD39000624BF /* LandmarkList.swift */,
+				1A361EF927F116C2000624BF /* LandmarkDetail.swift */,
+				1ABD715227D36CF500B88D55 /* MapView.swift */,
+				1A361EEA27F0A5F8000624BF /* CircleImage.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		1ABD711727D360E700B88D55 = {
@@ -144,6 +151,7 @@
 		1ABD712227D360E700B88D55 /* ios-practice */ = {
 			isa = PBXGroup;
 			children = (
+				1A361EFB27F11E82000624BF /* Components */,
 				1ABD712327D360E700B88D55 /* ios_practiceApp.swift */,
 				1ABD712727D360E700B88D55 /* Assets.xcassets */,
 				1A361EF027F0AAB2000624BF /* Views */,
