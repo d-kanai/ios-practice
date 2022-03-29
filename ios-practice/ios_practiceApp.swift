@@ -7,7 +7,7 @@ struct ios_practiceApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DoDApp()
                 .environmentObject(modelData)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }

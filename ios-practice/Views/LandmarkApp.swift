@@ -2,7 +2,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct LandmarkApp: View {
     
     @State private var selection: Tab = .list
     
@@ -27,7 +27,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkApp()
             .environmentObject(ModelData())
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }

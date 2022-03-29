@@ -16,8 +16,13 @@
 		1A361EFA27F116C2000624BF /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A361EF927F116C2000624BF /* LandmarkDetail.swift */; };
 		1A361EFD27F1240E000624BF /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A361EFC27F1240E000624BF /* FavoriteButton.swift */; };
 		1A8B48D227F3074700134611 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48D127F3074700134611 /* Sample.swift */; };
+		1A8B48D727F32BC800134611 /* DoDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48D627F32BC800134611 /* DoDApp.swift */; };
+		1A8B48D927F32C2E00134611 /* DoDList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48D827F32C2E00134611 /* DoDList.swift */; };
+		1A8B48DB27F32D6000134611 /* DoDDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48DA27F32D6000134611 /* DoDDetail.swift */; };
+		1A8B48DE27F32D8800134611 /* DoDRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48DD27F32D8800134611 /* DoDRow.swift */; };
+		1A8B48E027F32E1A00134611 /* DoD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48DF27F32E1A00134611 /* DoD.swift */; };
 		1ABD712427D360E700B88D55 /* ios_practiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD712327D360E700B88D55 /* ios_practiceApp.swift */; };
-		1ABD712627D360E700B88D55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD712527D360E700B88D55 /* ContentView.swift */; };
+		1ABD712627D360E700B88D55 /* LandmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD712527D360E700B88D55 /* LandmarkApp.swift */; };
 		1ABD712827D360E700B88D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD712727D360E700B88D55 /* Assets.xcassets */; };
 		1ABD712B27D360E700B88D55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD712A27D360E700B88D55 /* Preview Assets.xcassets */; };
 		1ABD712D27D360E700B88D55 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD712C27D360E700B88D55 /* Persistence.swift */; };
@@ -55,9 +60,14 @@
 		1A361EF927F116C2000624BF /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		1A361EFC27F1240E000624BF /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		1A8B48D127F3074700134611 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		1A8B48D627F32BC800134611 /* DoDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDApp.swift; sourceTree = "<group>"; };
+		1A8B48D827F32C2E00134611 /* DoDList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDList.swift; sourceTree = "<group>"; };
+		1A8B48DA27F32D6000134611 /* DoDDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDDetail.swift; sourceTree = "<group>"; };
+		1A8B48DD27F32D8800134611 /* DoDRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDRow.swift; sourceTree = "<group>"; };
+		1A8B48DF27F32E1A00134611 /* DoD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoD.swift; sourceTree = "<group>"; };
 		1ABD712027D360E700B88D55 /* ios-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABD712327D360E700B88D55 /* ios_practiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_practiceApp.swift; sourceTree = "<group>"; };
-		1ABD712527D360E700B88D55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1ABD712527D360E700B88D55 /* LandmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkApp.swift; sourceTree = "<group>"; };
 		1ABD712727D360E700B88D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ABD712A27D360E700B88D55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1ABD712C27D360E700B88D55 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -100,8 +110,11 @@
 			children = (
 				1A361EF927F116C2000624BF /* LandmarkDetail.swift */,
 				1A361EF727F0AD39000624BF /* LandmarkList.swift */,
-				1ABD712527D360E700B88D55 /* ContentView.swift */,
+				1ABD712527D360E700B88D55 /* LandmarkApp.swift */,
 				1A8B48D127F3074700134611 /* Sample.swift */,
+				1A8B48D627F32BC800134611 /* DoDApp.swift */,
+				1A8B48D827F32C2E00134611 /* DoDList.swift */,
+				1A8B48DA27F32D6000134611 /* DoDDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 			children = (
 				1A361EEC27F0A991000624BF /* Landmark.swift */,
 				1A361EEE27F0AA14000624BF /* ModelData.swift */,
+				1A8B48DF27F32E1A00134611 /* DoD.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +140,7 @@
 		1A361EFB27F11E82000624BF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1A8B48DC27F32D7A00134611 /* DoDs */,
 				1A361EFE27F12473000624BF /* Landmarks */,
 				1ABD715227D36CF500B88D55 /* MapComponent.swift */,
 				1A361EEA27F0A5F8000624BF /* CircleImage.swift */,
@@ -140,6 +155,14 @@
 				1A361EF527F0ABF5000624BF /* LandmarkRow.swift */,
 			);
 			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		1A8B48DC27F32D7A00134611 /* DoDs */ = {
+			isa = PBXGroup;
+			children = (
+				1A8B48DD27F32D8800134611 /* DoDRow.swift */,
+			);
+			path = DoDs;
 			sourceTree = "<group>";
 		};
 		1ABD711727D360E700B88D55 = {
@@ -337,16 +360,21 @@
 				1A361EED27F0A991000624BF /* Landmark.swift in Sources */,
 				1A361EEF27F0AA14000624BF /* ModelData.swift in Sources */,
 				1ABD715327D36CF500B88D55 /* MapComponent.swift in Sources */,
+				1A8B48D927F32C2E00134611 /* DoDList.swift in Sources */,
+				1A8B48DB27F32D6000134611 /* DoDDetail.swift in Sources */,
+				1A8B48E027F32E1A00134611 /* DoD.swift in Sources */,
 				1A361EFD27F1240E000624BF /* FavoriteButton.swift in Sources */,
 				1ABD712D27D360E700B88D55 /* Persistence.swift in Sources */,
-				1ABD712627D360E700B88D55 /* ContentView.swift in Sources */,
+				1ABD712627D360E700B88D55 /* LandmarkApp.swift in Sources */,
 				1ABD713027D360E700B88D55 /* ios_practice.xcdatamodeld in Sources */,
 				1A361EF627F0ABF5000624BF /* LandmarkRow.swift in Sources */,
+				1A8B48DE27F32D8800134611 /* DoDRow.swift in Sources */,
 				1ABD712427D360E700B88D55 /* ios_practiceApp.swift in Sources */,
 				1A361EEB27F0A5F8000624BF /* CircleImage.swift in Sources */,
 				1A361EF827F0AD39000624BF /* LandmarkList.swift in Sources */,
 				1A8B48D227F3074700134611 /* Sample.swift in Sources */,
 				1A361EFA27F116C2000624BF /* LandmarkDetail.swift in Sources */,
+				1A8B48D727F32BC800134611 /* DoDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
