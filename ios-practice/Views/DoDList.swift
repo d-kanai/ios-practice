@@ -3,7 +3,7 @@ import Foundation
 
 struct DoDList: View {
     @State private var dodList = [DoD]()
-
+    
     var body: some View {
         NavigationView {
             List {
@@ -16,13 +16,17 @@ struct DoDList: View {
                 }
             }.navigationTitle("DoD List")
         }.onAppear {
-            print("🔴 onApper: DoD List")
+            print("👍 onApper: DoD List")
             Task {
-              dodList = await DoDRepository().findAll()
+                do {
+                    dodList = try await DoDRepository().findAll()
+                } catch {
+                    
+                }
             }
-
+            
         }
-
+        
     }
 }
 

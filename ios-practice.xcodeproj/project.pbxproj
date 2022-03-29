@@ -15,6 +15,7 @@
 		1A361EF827F0AD39000624BF /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A361EF727F0AD39000624BF /* LandmarkList.swift */; };
 		1A361EFA27F116C2000624BF /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A361EF927F116C2000624BF /* LandmarkDetail.swift */; };
 		1A361EFD27F1240E000624BF /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A361EFC27F1240E000624BF /* FavoriteButton.swift */; };
+		1A4EC21227F33D4900DDB75E /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EC21127F33D4900DDB75E /* HttpClient.swift */; };
 		1A8B48D227F3074700134611 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48D127F3074700134611 /* Sample.swift */; };
 		1A8B48D727F32BC800134611 /* DoDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48D627F32BC800134611 /* DoDApp.swift */; };
 		1A8B48D927F32C2E00134611 /* DoDList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48D827F32C2E00134611 /* DoDList.swift */; };
@@ -60,6 +61,7 @@
 		1A361EF727F0AD39000624BF /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		1A361EF927F116C2000624BF /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		1A361EFC27F1240E000624BF /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		1A4EC21127F33D4900DDB75E /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		1A8B48D127F3074700134611 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		1A8B48D627F32BC800134611 /* DoDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDApp.swift; sourceTree = "<group>"; };
 		1A8B48D827F32C2E00134611 /* DoDList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDList.swift; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 			path = Landmarks;
 			sourceTree = "<group>";
 		};
+		1A4EC21027F33D3D00DDB75E /* poso */ = {
+			isa = PBXGroup;
+			children = (
+				1A4EC21127F33D4900DDB75E /* HttpClient.swift */,
+			);
+			path = poso;
+			sourceTree = "<group>";
+		};
 		1A8B48DC27F32D7A00134611 /* DoDs */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		1ABD712227D360E700B88D55 /* ios-practice */ = {
 			isa = PBXGroup;
 			children = (
+				1A4EC21027F33D3D00DDB75E /* poso */,
 				1A8B48E127F330DB00134611 /* Repositories */,
 				1A361EFB27F11E82000624BF /* Components */,
 				1ABD712327D360E700B88D55 /* ios_practiceApp.swift */,
@@ -378,6 +389,7 @@
 				1A361EFD27F1240E000624BF /* FavoriteButton.swift in Sources */,
 				1ABD712D27D360E700B88D55 /* Persistence.swift in Sources */,
 				1ABD712627D360E700B88D55 /* LandmarkApp.swift in Sources */,
+				1A4EC21227F33D4900DDB75E /* HttpClient.swift in Sources */,
 				1ABD713027D360E700B88D55 /* ios_practice.xcdatamodeld in Sources */,
 				1A361EF627F0ABF5000624BF /* LandmarkRow.swift in Sources */,
 				1A8B48DE27F32D8800134611 /* DoDRow.swift in Sources */,

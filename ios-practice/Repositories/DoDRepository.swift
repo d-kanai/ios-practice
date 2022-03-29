@@ -1,10 +1,12 @@
-
 import Foundation
 
-
 class DoDRepository {
-    
-    func findAll() async -> [DoD] {
-        return [DoD.init(id: 1, name: "Long Method")]
+    func findAll() async throws -> [DoD] {
+        let dodListResponse :DoDListResponse = try await HttpClient().get(url: "/dods")
+        return dodListResponse.items
     }
+}
+
+struct DoDListResponse: Hashable, Codable {
+    var items: [DoD]
 }
