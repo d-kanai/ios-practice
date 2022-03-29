@@ -17,7 +17,10 @@ struct DoDList: View {
             }.navigationTitle("DoD List")
         }.onAppear {
             print("🔴 onApper: DoD List")
-            dodList = DoDRepository().findAll()
+            Task {
+              dodList = await DoDRepository().findAll()
+            }
+
         }
 
     }
