@@ -4,8 +4,27 @@ import CoreData
 
 struct ContentView: View {
     
+    @State private var selection: Tab = .list
+    
+    enum Tab {
+        case list
+        case list2
+    }
+    
     var body: some View {
-        LandmarkList()
+        TabView(selection: $selection) {
+            LandmarkList()
+                .tabItem {
+                    Label("list", systemImage: "star")
+                }
+                .tag(Tab.list)
+
+            LandmarkList()
+                .tabItem {
+                    Label("list2", systemImage: "list.bullet")
+                }
+                .tag(Tab.list2)
+        }
     }
 }
 
