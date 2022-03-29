@@ -24,6 +24,8 @@ struct DoDApp: View {
 
 struct DoDApp_Previews: PreviewProvider {
     static var previews: some View {
+        let dodRepository = FakeDoDRepository()
         DoDApp()
+            .environmentObject(dodRepository)
     }
 }

@@ -9,6 +9,7 @@ struct ios_practiceApp: App {
         WindowGroup {
             DoDApp()
                 .environmentObject(modelData)
+                .environmentObject(DoDRepository())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
