@@ -16,14 +16,11 @@ struct ContentView: View {
             LandmarkList()
                 .tabItem {
                     Label("list", systemImage: "star")
-                }
-                .tag(Tab.list)
-
-            LandmarkList()
+                }.tag(Tab.list)
+            Sample()
                 .tabItem {
                     Label("list2", systemImage: "list.bullet")
-                }
-                .tag(Tab.list2)
+                }.tag(Tab.list2)
         }
     }
 }
