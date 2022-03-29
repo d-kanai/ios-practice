@@ -2,7 +2,7 @@ import SwiftUI
 import Foundation
 
 struct DoDList: View {
-    @State private var dodList = [DoD.init(id: 1, name: "Long Method")]
+    @State private var dodList = [DoD]()
 
     var body: some View {
         NavigationView {
@@ -15,7 +15,11 @@ struct DoDList: View {
                     }
                 }
             }.navigationTitle("DoD List")
+        }.onAppear {
+            print("🔴 onApper: DoD List")
+            dodList = DoDRepository().findAll()
         }
+
     }
 }
 

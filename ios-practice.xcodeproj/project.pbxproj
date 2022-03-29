@@ -21,6 +21,7 @@
 		1A8B48DB27F32D6000134611 /* DoDDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48DA27F32D6000134611 /* DoDDetail.swift */; };
 		1A8B48DE27F32D8800134611 /* DoDRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48DD27F32D8800134611 /* DoDRow.swift */; };
 		1A8B48E027F32E1A00134611 /* DoD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48DF27F32E1A00134611 /* DoD.swift */; };
+		1A8B48E327F330E800134611 /* DoDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B48E227F330E800134611 /* DoDRepository.swift */; };
 		1ABD712427D360E700B88D55 /* ios_practiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD712327D360E700B88D55 /* ios_practiceApp.swift */; };
 		1ABD712627D360E700B88D55 /* LandmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD712527D360E700B88D55 /* LandmarkApp.swift */; };
 		1ABD712827D360E700B88D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD712727D360E700B88D55 /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		1A8B48DA27F32D6000134611 /* DoDDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDDetail.swift; sourceTree = "<group>"; };
 		1A8B48DD27F32D8800134611 /* DoDRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDRow.swift; sourceTree = "<group>"; };
 		1A8B48DF27F32E1A00134611 /* DoD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoD.swift; sourceTree = "<group>"; };
+		1A8B48E227F330E800134611 /* DoDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDRepository.swift; sourceTree = "<group>"; };
 		1ABD712027D360E700B88D55 /* ios-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABD712327D360E700B88D55 /* ios_practiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_practiceApp.swift; sourceTree = "<group>"; };
 		1ABD712527D360E700B88D55 /* LandmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkApp.swift; sourceTree = "<group>"; };
@@ -165,6 +167,14 @@
 			path = DoDs;
 			sourceTree = "<group>";
 		};
+		1A8B48E127F330DB00134611 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				1A8B48E227F330E800134611 /* DoDRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		1ABD711727D360E700B88D55 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +198,7 @@
 		1ABD712227D360E700B88D55 /* ios-practice */ = {
 			isa = PBXGroup;
 			children = (
+				1A8B48E127F330DB00134611 /* Repositories */,
 				1A361EFB27F11E82000624BF /* Components */,
 				1ABD712327D360E700B88D55 /* ios_practiceApp.swift */,
 				1ABD712727D360E700B88D55 /* Assets.xcassets */,
@@ -363,6 +374,7 @@
 				1A8B48D927F32C2E00134611 /* DoDList.swift in Sources */,
 				1A8B48DB27F32D6000134611 /* DoDDetail.swift in Sources */,
 				1A8B48E027F32E1A00134611 /* DoD.swift in Sources */,
+				1A8B48E327F330E800134611 /* DoDRepository.swift in Sources */,
 				1A361EFD27F1240E000624BF /* FavoriteButton.swift in Sources */,
 				1ABD712D27D360E700B88D55 /* Persistence.swift in Sources */,
 				1ABD712627D360E700B88D55 /* LandmarkApp.swift in Sources */,
