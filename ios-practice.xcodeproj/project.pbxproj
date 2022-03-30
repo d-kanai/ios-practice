@@ -34,6 +34,9 @@
 		1ABD714427D360E700B88D55 /* ios_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD714327D360E700B88D55 /* ios_practiceUITests.swift */; };
 		1ABD714627D360E700B88D55 /* ios_practiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD714527D360E700B88D55 /* ios_practiceUITestsLaunchTests.swift */; };
 		1ABD715327D36CF500B88D55 /* MapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD715227D36CF500B88D55 /* MapComponent.swift */; };
+		1AEE9B9927F42AD4002CA697 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEE9B9827F42AD4002CA697 /* ViewInspector */; };
+		1AEE9B9B27F44B91002CA697 /* DoDNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE9B9A27F44B91002CA697 /* DoDNew.swift */; };
+		1AEE9B9D27F45EA5002CA697 /* DoDForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE9B9C27F45EA5002CA697 /* DoDForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,8 @@
 		1ABD714327D360E700B88D55 /* ios_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_practiceUITests.swift; sourceTree = "<group>"; };
 		1ABD714527D360E700B88D55 /* ios_practiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_practiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1ABD715227D36CF500B88D55 /* MapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapComponent.swift; sourceTree = "<group>"; };
+		1AEE9B9A27F44B91002CA697 /* DoDNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDNew.swift; sourceTree = "<group>"; };
+		1AEE9B9C27F45EA5002CA697 /* DoDForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AEE9B9927F42AD4002CA697 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +127,7 @@
 				1A8B48D627F32BC800134611 /* DoDApp.swift */,
 				1A8B48D827F32C2E00134611 /* DoDList.swift */,
 				1A8B48DA27F32D6000134611 /* DoDDetail.swift */,
+				1AEE9B9A27F44B91002CA697 /* DoDNew.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				1A8B48DD27F32D8800134611 /* DoDRow.swift */,
+				1AEE9B9C27F45EA5002CA697 /* DoDForm.swift */,
 			);
 			path = DoDs;
 			sourceTree = "<group>";
@@ -267,6 +275,8 @@
 			dependencies = (
 			);
 			name = "ios-practice";
+			packageProductDependencies = (
+			);
 			productName = "ios-practice";
 			productReference = 1ABD712027D360E700B88D55 /* ios-practice.app */;
 			productType = "com.apple.product-type.application";
@@ -285,6 +295,9 @@
 				1ABD713727D360E700B88D55 /* PBXTargetDependency */,
 			);
 			name = "ios-practiceTests";
+			packageProductDependencies = (
+				1AEE9B9827F42AD4002CA697 /* ViewInspector */,
+			);
 			productName = "ios-practiceTests";
 			productReference = 1ABD713527D360E700B88D55 /* ios-practiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -339,6 +352,9 @@
 				Base,
 			);
 			mainGroup = 1ABD711727D360E700B88D55;
+			packageReferences = (
+				1AEE9B9727F42AD4002CA697 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 1ABD712127D360E700B88D55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,6 +404,7 @@
 				1A4EC21427F3447B00DDB75E /* FakeRepository.swift in Sources */,
 				1A8B48D927F32C2E00134611 /* DoDList.swift in Sources */,
 				1A8B48DB27F32D6000134611 /* DoDDetail.swift in Sources */,
+				1AEE9B9B27F44B91002CA697 /* DoDNew.swift in Sources */,
 				1A8B48E027F32E1A00134611 /* DoD.swift in Sources */,
 				1A8B48E327F330E800134611 /* DoDRepository.swift in Sources */,
 				1A361EFD27F1240E000624BF /* FavoriteButton.swift in Sources */,
@@ -398,6 +415,7 @@
 				1A361EF627F0ABF5000624BF /* LandmarkRow.swift in Sources */,
 				1A8B48DE27F32D8800134611 /* DoDRow.swift in Sources */,
 				1ABD712427D360E700B88D55 /* ios_practiceApp.swift in Sources */,
+				1AEE9B9D27F45EA5002CA697 /* DoDForm.swift in Sources */,
 				1A361EEB27F0A5F8000624BF /* CircleImage.swift in Sources */,
 				1A361EF827F0AD39000624BF /* LandmarkList.swift in Sources */,
 				1A8B48D227F3074700134611 /* Sample.swift in Sources */,
@@ -620,6 +638,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9CBTU9A5M5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
@@ -639,6 +658,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9CBTU9A5M5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
@@ -657,6 +677,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9CBTU9A5M5;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dkanai.ios-practiceUITests";
@@ -674,6 +695,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9CBTU9A5M5;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dkanai.ios-practiceUITests";
@@ -725,6 +747,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AEE9B9727F42AD4002CA697 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AEE9B9827F42AD4002CA697 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AEE9B9727F42AD4002CA697 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		1ABD712E27D360E700B88D55 /* ios_practice.xcdatamodeld */ = {

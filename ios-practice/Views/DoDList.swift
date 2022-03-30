@@ -3,8 +3,8 @@ import Foundation
 
 struct DoDList: View {
     @State private var dodList = [DoD]()
-    @EnvironmentObject var dodRepoisitory: DoDRepository
-
+    @EnvironmentObject var dodRepository: DoDRepository
+    
     var body: some View {
         NavigationView {
             List {
@@ -20,7 +20,7 @@ struct DoDList: View {
             print("👍 onApper: DoD List")
             Task {
                 do {
-                    dodList = try await dodRepoisitory.findAll()
+                    dodList = try await dodRepository.findAll()
                 } catch {
                     //TODO
                 }
@@ -33,7 +33,7 @@ struct DoDList: View {
 
 struct DoDList_Previews: PreviewProvider {
     static var previews: some View {
-        let dodRepository = FakeDoDRepository()
+        let dodRepository:DoDRepository = FakeDoDRepository()
         DoDList()
             .environmentObject(dodRepository)
     }

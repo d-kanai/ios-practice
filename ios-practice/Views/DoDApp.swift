@@ -14,7 +14,7 @@ struct DoDApp: View {
                 .tabItem {
                     Label("list", systemImage: "list.bullet")
                 }.tag(Tab.list)
-            Sample()
+            DoDNew()
                 .tabItem {
                     Label("create", systemImage: "list.bullet")
                 }.tag(Tab.create)
@@ -24,7 +24,7 @@ struct DoDApp: View {
 
 struct DoDApp_Previews: PreviewProvider {
     static var previews: some View {
-        let dodRepository = FakeDoDRepository()
+        let dodRepository:DoDRepository = FakeDoDRepository()
         DoDApp()
             .environmentObject(dodRepository)
     }

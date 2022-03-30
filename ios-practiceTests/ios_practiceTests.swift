@@ -1,36 +1,57 @@
-//
-//  ios_practiceTests.swift
-//  ios-practiceTests
-//
-//  Created by daiki kanai on 2022/03/05.
-//
 
 import XCTest
+import ViewInspector
+import SwiftUI
+
 @testable import ios_practice
 
-class ios_practiceTests: XCTestCase {
+extension DoDApp: Inspectable { }
+extension DoDDetail: Inspectable { }
 
+class DoDTests: XCTestCase {
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test_showDoDDetailText() throws {
+        //given
+        let view = DoDDetail(dod: DoD.init(id: 1, name: "Long Method"))
+        //when
+        let text = try view.inspect().text(0).string()
+        //then
+        XCTAssertEqual(text, "Long Method")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func test_xxx() throws {
+        //given
+        let dodRepository:DoDRepository = FakeDoDRepository()
+        var view = DoDApp().environmentObject(dodRepository)
+        //when
+//        try view.inspect().find(button: "Fake Long Method").tap()
+        // XCTAssertEqual(text, "Long Method")
     }
+    func test_example() throws {
+        let view = MyView()
+        let text = try view.inspect().find(text: "OK").string()
+        XCTAssertEqual(text, "OK")
+    }
+    
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+extension DoDList: Inspectable { }
+extension MyView: Inspectable { }
+extension OtherView: Inspectable { }
+
+struct MyView: View {
+    var body: some View {
+        HStack {
+            Text("Hi")
+            AnyView(OtherView())
         }
     }
+}
 
+struct OtherView: View {
+    var body: some View {
+        Text("OK").id("okText")
+    }
 }
