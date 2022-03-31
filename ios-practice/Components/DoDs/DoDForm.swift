@@ -4,15 +4,17 @@ struct DoDForm: View {
     var onSubmit: (String) async throws -> ()
     @State var name: String = ""
     @State var showingAlert: Bool = false
+    @FocusState var focus:Bool
     
     var body: some View {
         Form {
-            TextField("name", text: $name)
+            TextField("name", text: $name).focused(self.$focus)
             Button(action: {
                 Task {
                     print("tap button")
                     try await self.onSubmit(self.name)
                     self.showingAlert = true
+                    self.focus = false
                 }
             }) {
                 Text("Create DoD")
