@@ -6,3 +6,10 @@ class FakeDoDRepository: DoDRepository {
     }
     
 }
+
+class FakeDoDRecordRepository: DoDRecordRepository {
+    override func findAll(dodId: Int) async throws -> [DoDRecord] {
+        return [DoDRecord.init(id: 1, dodId: 1, date: Date(), value: 100, comment: "feature")]
+    }
+    
+}

@@ -37,6 +37,9 @@
 		1AEE9B9927F42AD4002CA697 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEE9B9827F42AD4002CA697 /* ViewInspector */; };
 		1AEE9B9B27F44B91002CA697 /* DoDNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE9B9A27F44B91002CA697 /* DoDNew.swift */; };
 		1AEE9B9D27F45EA5002CA697 /* DoDForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE9B9C27F45EA5002CA697 /* DoDForm.swift */; };
+		1AEE9B9F27F5A55B002CA697 /* DoDRecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE9B9E27F5A55B002CA697 /* DoDRecordRepository.swift */; };
+		1AEE9BA127F5A5C1002CA697 /* DoDRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE9BA027F5A5C1002CA697 /* DoDRecord.swift */; };
+		1AEE9BA427F5A7AD002CA697 /* DoDRecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE9BA327F5A7AD002CA697 /* DoDRecordRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		1ABD715227D36CF500B88D55 /* MapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapComponent.swift; sourceTree = "<group>"; };
 		1AEE9B9A27F44B91002CA697 /* DoDNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDNew.swift; sourceTree = "<group>"; };
 		1AEE9B9C27F45EA5002CA697 /* DoDForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDForm.swift; sourceTree = "<group>"; };
+		1AEE9B9E27F5A55B002CA697 /* DoDRecordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDRecordRepository.swift; sourceTree = "<group>"; };
+		1AEE9BA027F5A5C1002CA697 /* DoDRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDRecord.swift; sourceTree = "<group>"; };
+		1AEE9BA327F5A7AD002CA697 /* DoDRecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoDRecordRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 				1A361EEC27F0A991000624BF /* Landmark.swift */,
 				1A361EEE27F0AA14000624BF /* ModelData.swift */,
 				1A8B48DF27F32E1A00134611 /* DoD.swift */,
+				1AEE9BA027F5A5C1002CA697 /* DoDRecord.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 		1A361EFB27F11E82000624BF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1AEE9BA227F5A7A0002CA697 /* DoDRecords */,
 				1A8B48DC27F32D7A00134611 /* DoDs */,
 				1A361EFE27F12473000624BF /* Landmarks */,
 				1ABD715227D36CF500B88D55 /* MapComponent.swift */,
@@ -192,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				1A8B48E227F330E800134611 /* DoDRepository.swift */,
+				1AEE9B9E27F5A55B002CA697 /* DoDRecordRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -257,6 +266,14 @@
 				1ABD714527D360E700B88D55 /* ios_practiceUITestsLaunchTests.swift */,
 			);
 			path = "ios-practiceUITests";
+			sourceTree = "<group>";
+		};
+		1AEE9BA227F5A7A0002CA697 /* DoDRecords */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE9BA327F5A7AD002CA697 /* DoDRecordRow.swift */,
+			);
+			path = DoDRecords;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +417,7 @@
 			files = (
 				1A361EED27F0A991000624BF /* Landmark.swift in Sources */,
 				1A361EEF27F0AA14000624BF /* ModelData.swift in Sources */,
+				1AEE9B9F27F5A55B002CA697 /* DoDRecordRepository.swift in Sources */,
 				1ABD715327D36CF500B88D55 /* MapComponent.swift in Sources */,
 				1A4EC21427F3447B00DDB75E /* FakeRepository.swift in Sources */,
 				1A8B48D927F32C2E00134611 /* DoDList.swift in Sources */,
@@ -411,8 +429,10 @@
 				1ABD712D27D360E700B88D55 /* Persistence.swift in Sources */,
 				1ABD712627D360E700B88D55 /* LandmarkApp.swift in Sources */,
 				1A4EC21227F33D4900DDB75E /* HttpClient.swift in Sources */,
+				1AEE9BA127F5A5C1002CA697 /* DoDRecord.swift in Sources */,
 				1ABD713027D360E700B88D55 /* ios_practice.xcdatamodeld in Sources */,
 				1A361EF627F0ABF5000624BF /* LandmarkRow.swift in Sources */,
+				1AEE9BA427F5A7AD002CA697 /* DoDRecordRow.swift in Sources */,
 				1A8B48DE27F32D8800134611 /* DoDRow.swift in Sources */,
 				1ABD712427D360E700B88D55 /* ios_practiceApp.swift in Sources */,
 				1AEE9B9D27F45EA5002CA697 /* DoDForm.swift in Sources */,

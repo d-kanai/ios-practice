@@ -10,6 +10,7 @@ struct ios_practiceApp: App {
             DoDApp()
                 .environmentObject(modelData)
                 .environmentObject(DoDRepository())
+                .environmentObject(DoDRecordRepository())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
