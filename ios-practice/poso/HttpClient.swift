@@ -31,6 +31,7 @@ class HttpClient {
             throw RuntimeError.general
         }
         print(response.statusCode)
+        print(data)
         let decodedResponse = try JSONDecoder().decode(T.self, from: data)
         print(decodedResponse)
         return decodedResponse
