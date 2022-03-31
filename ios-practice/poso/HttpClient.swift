@@ -10,7 +10,7 @@ class HttpClient {
         return try await request(method: "GET", url: url)
     }
     
-    func post<T:Decodable>(url: String, body:[String: Any]) async throws -> T {
+    func post<T:Decodable>(url: String, body:[String: Any]?=nil) async throws -> T {
         return try await request(method: "POST", url: url, body: body)
     }
     

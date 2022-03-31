@@ -39,7 +39,8 @@ struct DoDDetail: View {
     
     func onSubmit(formData: Dictionary<String, Any>) async throws {
         let params = formData.merging(["dodId": dod.id]) { $1 }
-        let _ = try await dodRecordRepository.create(params: params)
+        let dodRecord:DoDRecord = try await dodRecordRepository.create(params: params)
+        self.dodRecordList.append(dodRecord)
     }
 }
 
