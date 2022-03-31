@@ -8,9 +8,8 @@ class DoDRecordRepository: ObservableObject {
         let dodRecordListResponse :DoDRecordListResponse = try await HttpClient().get(url: "/dods/\(dodId)/records")
         return dodRecordListResponse.items
     }
-    func create(value: String) async throws -> DoDRecord {
-        let body: [String: Any] = ["value": value]
-        let dodRecord: DoDRecord = try await HttpClient().post(url: "/dodRecords", body: body)
+    func create(params: Dictionary<String, Any>) async throws -> DoDRecord {
+        let dodRecord: DoDRecord = try await HttpClient().post(url: "/dodRecords", body: params)
         return dodRecord
     }
 }

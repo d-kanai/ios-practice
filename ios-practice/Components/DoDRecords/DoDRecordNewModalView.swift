@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 struct DoDRecordNewModalView: View {
-    var onSubmit: (Dictionary<String, String>) async throws -> ()
+    var onSubmit: (Dictionary<String, Any>) async throws -> ()
     @State var value: String = ""
     @State var comment: String = ""
     @State var isShowAlert: Bool = false
@@ -17,7 +17,7 @@ struct DoDRecordNewModalView: View {
             Button(action: {
                 Task {
                     print("tap button")
-                    let formData: Dictionary<String, String> = [
+                    var formData: Dictionary<String, Any> = [
                         "date": "2020-01-01",
                         "value": self.value,
                         "comment": self.comment
