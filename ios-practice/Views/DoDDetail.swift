@@ -19,11 +19,12 @@ struct DoDDetail: View {
             ToolbarItem(placement: .navigationBarTrailing){
                 Button(action: {
                     self.isShowModal.toggle()
-                }) {
+                }
+                ) {
                     Image(systemName: "plus")
                 }.sheet(isPresented: $isShowModal) {
                     DoDRecordNewModalView(onSubmit: onSubmit)
-                }
+                }.accessibility(identifier: "openDoDRecordFormModal")
             }
         }.onAppear {
             print("👍 onApper: DoD Record List")
